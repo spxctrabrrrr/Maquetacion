@@ -147,3 +147,35 @@ body.modo-oscuro .etiqueta {
 body.modo-oscuro .boton-amarillo {
   color: #0b0d10;
 }
+
+@media (max-width: 834px) {
+  .contenedor { padding-left: 24px; padding-right: 24px; }
+  
+  .menu-toggle { display: flex; }
+  .nav { display: none; position: absolute; top: 100%; right: 0; left: 0; flex-direction: column; background-color: #3d4352; padding: 20px 24px; }
+  .nav.abierto { display: flex; }
+  
+  .hero-contenido { flex-direction: column; text-align: center; }
+  .hero-texto { width: 100%; }
+  .hero-botones { justify-content: center; }
+  .paisaje-hero { width: 100%; height: 250px; }
+  
+  .proyectos { grid-template-columns: 1fr 1fr; }
+  
+  .galeria { grid-template-columns: 1fr 1fr 1fr; grid-auto-rows: 100px; }
+}
+
+@media (max-width: 390px) {
+  .contenedor { padding-left: 16px; padding-right: 16px; }
+  
+  .hero-texto h1 { font-size: 26px; }
+  
+  .hero-botones { flex-direction: column; width: 100%; gap: 10px; }
+  .boton { width: 100%; }
+  
+  .proyectos { grid-template-columns: 1fr; }
+  
+  .galeria { grid-template-columns: 1fr 1fr; grid-auto-rows: 75px; }
+  
+  .pie-contenido { flex-direction: column; gap: 12px; text-align: center; }
+}
